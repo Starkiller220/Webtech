@@ -45,8 +45,7 @@ $(function(){
 
         var row = $('[dataID='+$(this).attr("dataID")+"][id='edit']");
 
-        del(row);
-
+        delManu(row);
         addManu();
     });
 
@@ -68,7 +67,6 @@ $(function(){
         var fdate = new Date($(this).parent().children()[2].outerText);
         var month = fdate.getMonth()+1 < 10? "0"+ (fdate.getMonth()+1) : fdate.getMonth()+1;
         var day = fdate.getDate() < 10? "0"+ fdate.getDate() : fdate.getDate();
-        console.log(fdate.getFullYear()+"-"+ month  +"-"+ day);
 
         $("#founded").val(fdate.getFullYear()+"-"+ month +"-"+day);
 
@@ -105,12 +103,10 @@ $(function(){
 
     function delManu(row){
         row.parent().remove()
-        
         $.ajax({
             type:"DELETE",
             url:"https://webtechcars.herokuapp.com/api/manufacturers/"+row.attr("dataid"),
             success:function () {
-                
                 },
             error:function(){
                 console.log("Can't delete :(")
