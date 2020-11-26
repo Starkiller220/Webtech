@@ -1,0 +1,72 @@
+.container{
+    background-color: lightblue;
+    height: 1000px;
+}
+
+.banner{
+    background-color: black;
+    height: 100px;
+}
+
+.navBar{
+    margin: auto;
+    width: 300px;
+    height: 20px;
+    padding-top: 30px;
+    display: flex
+}
+
+.logoText{
+    color: whitesmoke;
+    margin: auto;
+    text-align: center;
+    font-size: xx-large;
+    vertical-align: middle;
+}
+
+.menuButton{
+    margin-left: 10px;
+    top: 200px;
+    right:150px;
+    padding-right: 0px;
+    border: 5px solid white;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+}
+
+
+.infoTable{
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: separate;
+    border: 2px solid black;
+    
+}
+
+.manufacTable{
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: separate;
+    border: 2px solid black;
+}
+
+.addCars{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+#content{
+    margin-top: 10px;
+}
+
+#close{
+    color: red;
+}
+
+th, td {
+    border: 1px solid black;
+} 
